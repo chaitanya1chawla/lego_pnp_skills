@@ -1,0 +1,21 @@
+aruco --> -0.029, -0.006, 0.26
+
+box height = 0.033
+
+
+
+FROM TOOL_POSE in world_frame -->
+home = [0.2900, -1.5539e-05, 0.5329] --> go_home.py
+target_from_home = [0.2804, 0.09989, 0.3486] 
+aruco_from_home = [0.28977, 0.00000, 0.31906] --> camera would be 9cm lower
+
+
+IN CAMERA FRAME -->
+aruco_from_home =  [-0.01179, 0.03434, 0.25689] --> 
+            this depth should be difference between home and aruco_from_home 
+            (taking into account that camera is 1cm away from bottom)
+
+
+improve ref_patch_visualization image --> choose a better image
+
+
